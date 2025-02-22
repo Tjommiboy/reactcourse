@@ -7,7 +7,7 @@ const NavBar = () => {
   const linkClass = ({ isActive }) =>
     isActive
       ? " bg-purple-700 text-yellow-400 font-bold hover:text-yellow-300  rounded-md px-3 py-2"
-      : "text-white hover:bg-purple-600 hover:text-yellow-300 hover:font-bold rounded-md px-3 py-2";
+      : "text-white hover:bg-purple-600 hover:animate-pulse hover:text-yellow-300 hover:font-bold rounded-md px-3 py-2";
 
   return (
     <nav className="bg-indigo-700 border-b border-indigo-500">
