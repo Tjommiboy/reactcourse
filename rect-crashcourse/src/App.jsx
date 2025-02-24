@@ -11,6 +11,7 @@ import JobsPage from "./pages/JobsPage";
 import NotFound404 from "./pages/NotFound404";
 import JobPage, { jobLoader } from "./pages/JobPage";
 import AddJobPage from "./pages/AddJobPage";
+import EditJobPage from "./pages/EditJobPage";
 
 const App = () => {
   //add new job
@@ -28,7 +29,10 @@ const App = () => {
   //delete job
 
   const deleteJob = async (id) => {
-    console.log("delete", id);
+    const res = await fetch(`/api/jobs/${id} `, {
+      method: "DELETE",
+    });
+    return;
   };
 
   const router = createBrowserRouter(

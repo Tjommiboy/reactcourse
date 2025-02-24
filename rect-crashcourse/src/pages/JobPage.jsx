@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useLoaderData, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 // import { useState, useEffect } from "react";
 // import Spinner from "../components/Spinner";
 
@@ -16,6 +17,7 @@ const JobPage = ({ deleteJob }) => {
     if (!confirm) return;
     deleteJob(jobId);
 
+    toast.success("Job deleted successfully");
     navigate("/jobs");
   };
 
@@ -69,12 +71,7 @@ const JobPage = ({ deleteJob }) => {
                   Job Description
                 </h3>
 
-                <p className="mb-4">
-                  We are seeking a talented Front-End Developer to join our team
-                  in Boston, MA. The ideal candidate will have strong skills in
-                  HTML, CSS, and JavaScript, with experience working with modern
-                  JavaScript frameworks such as React or Angular.
-                </p>
+                <p className="mb-4">{job.description}</p>
 
                 <h3 className="text-indigo-800 text-lg font-bold mb-2">
                   Salary

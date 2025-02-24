@@ -47,7 +47,7 @@
       "title": "React Front-End Developer",
       "type": "Part-Time",
       "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-      "location": "Pheonix, AZ",
+      "location": "Phoenix, AZ",
       "salary": "$60K - $70K",
       "company": {
         "name": "Alpha Elite",
@@ -82,20 +82,6 @@
         "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
-      }
-    },
-    {
-      "id": "147f",
-      "title": "Frontend Developer",
-      "type": "Full-Time",
-      "location": "Bangkok/ Satun",
-      "description": "Analyze and create UI by working with creative designer to create the best user experience.\nAnalyze and design essential REST API for develop applications.\nDevelop responsive web applications and mobile applications.\nCoordinate with staffs in design team and clients.\nCoordinate with development team, design team and other related teams including QA to create integration tests.\nCreate unit test for responsible function.\nEnsure compatibilities between applications and internet browsers",
-      "salary": "$150K - 175K",
-      "company": {
-        "name": "BlueBik",
-        "description": "Why work with us\nWe are a team of experts in a talented community, a collaborative atmosphere where creativity is encouraged. People First, by putting people at the heart of our priorities, we foster a work environment where you can excel and grow personally and professionally. Bluebik is strived for growth and expansion, and you can be part of our success story. We combine strategy, digital delivery excellence and deep technology advisory to help our clients transform their business. At Bluebik, your career advancement starts with actions. You can manage your own career and will advance based on performance. We collaborate to create unique and outstanding experiences with our talents to empower learning and growth opportunities. Whatever your ambitions, Bluebik offers you with a highly inclusive community of talents from both tech and business worlds to realize your full potential.",
-        "contactEmail": "anandchetty5071@gmail.com",
-        "contactPhone": "0953084891"
       }
     }
   ]
