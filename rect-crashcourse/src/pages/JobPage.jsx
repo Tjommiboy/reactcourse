@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 const JobPage = () => {
   const { id } = useParams();
   const job = useLoaderData();
-  //MY FIRST useState Component
+
+  //MY FIRST useEffect Component
   //   const [job, setJob] = useState(null);
   //   const [loading, setLoading] = useState(true);
 
@@ -78,15 +79,9 @@ const JobPage = () => {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-6">Company Info</h3>
 
-                <h2 className="text-2xl">NewTek Solutions</h2>
+                <h2 className="text-2xl">{job.company.name}</h2>
 
-                <p className="my-2">
-                  NewTek Solutions is a leading technology company specializing
-                  in web development and digital solutions. We pride ourselves
-                  on delivering high-quality products and services to our
-                  clients while fostering a collaborative and innovative work
-                  environment.
-                </p>
+                <p className="my-2">{job.company.description}</p>
 
                 <hr className="my-4" />
 
