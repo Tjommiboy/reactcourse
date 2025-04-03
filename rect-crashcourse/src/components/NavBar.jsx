@@ -18,7 +18,7 @@ const NavBar = () => {
               <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
                 <img className="h-10 w-auto" src={logo} alt="React Jobs" />
                 <span className="hidden md:block  text-yellow-400  text-2xl font-bold ml-2 hover:shadow-2xl hover:text-yellow-300  ">
-                  Gimmi Bid n´Sell
+                  Job Searcher
                 </span>
               </NavLink>
               <div className="md:ml-auto">
