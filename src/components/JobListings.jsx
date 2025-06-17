@@ -9,7 +9,9 @@ const JobListings = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrl = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
+      const baseUrl = "https://reactcourse-1-1kec.onrender.com"; // Your Render URL
+      const apiUrl = isHome ? `${baseUrl}/jobs?_limit=3` : `${baseUrl}/jobs`;
+
       try {
         const response = await fetch(apiUrl);
         const data = await response.json();
