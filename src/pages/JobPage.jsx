@@ -127,9 +127,19 @@ const JobPage = ({ deleteJob }) => {
   );
 };
 const jobLoader = async ({ params }) => {
-  const response = await fetch(`/api/jobs/${params.id}`);
-  const data = await response.json();
-  return data;
-};
+  const baseUrl = "https://reactcourse-1-1kec.onrender.com"; // your live backend
 
+  const response = await fetch(`${baseUrl}/jobs/${params.id}`);
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch job with id ${params.id}`);
+  }
+
+  try {
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    throw new Error("Invalid JSON response");
+  }
+};
 export { JobPage as default, jobLoader };
