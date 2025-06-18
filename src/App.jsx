@@ -15,36 +15,35 @@ import EditJobPage from "./pages/EditJobPage";
 
 const App = () => {
   //add new job
+  const baseUrl = "https://reactcourse-1-1kec.onrender.com"; // Your Render backend URL
+
   const addJob = async (newJob) => {
-    const res = await fetch("/api/jobs", {
+    const res = await fetch(`${baseUrl}/jobs`, {
       method: "POST",
       headers: {
-        "content-Type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(newJob),
     });
-    return;
+    return res.json(); // optional, depends on your use case
   };
-
-  //delete job
 
   const deleteJob = async (id) => {
-    const res = await fetch(`/api/jobs/${id} `, {
+    const res = await fetch(`${baseUrl}/jobs/${id}`, {
       method: "DELETE",
     });
-    return;
+    return res.ok;
   };
 
-  //Update Job
   const updateJob = async (job) => {
-    const res = await fetch(`/api/jobs/${job.id} `, {
+    const res = await fetch(`${baseUrl}/jobs/${job.id}`, {
       method: "PUT",
       headers: {
-        "content-Type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(job),
     });
-    return;
+    return res.json(); // optional
   };
 
   const router = createBrowserRouter(
